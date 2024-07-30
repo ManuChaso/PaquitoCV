@@ -1,0 +1,32 @@
+.skill-container{
+    width: 400px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-icon{
+    width: 50px;
+}
+
+.percentage-container{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(75, 75, 75);
+}
+
+.percentage{
+    display: flex;
+    align-items: center;
+    height: calc(100% - 10px);
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.percentage-text{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(43, 43, 43);
+}

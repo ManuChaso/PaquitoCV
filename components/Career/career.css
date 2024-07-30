@@ -1,0 +1,76 @@
+.career-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.buttons-container{
+    display: flex;
+    gap: 20px;
+}
+
+.career-buttons{
+    width: 150px;
+    height: 30px;
+    border: none;
+    color: black;
+    background-color: aquamarine;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.career-buttons:hover{
+    filter: brightness(0.9);
+}
+
+.career-section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    animation: fadein 2s ease-in-out forwards;
+}
+
+.experience-container{
+    transform: translateX(-80%);
+    animation: fadein 1s ease-in-out forwards;
+}
+
+.studies-container{
+    position: relative;
+    transform: translateX(80%);
+    animation: fadein 1s ease-in-out forwards;
+}
+
+.fade-out-studies{
+    transform: translateX(0);
+    animation: fadeout-stu 1s ease-in-out forwards;
+}
+
+.fade-out-experience{
+    transform: translateX(0);
+    animation: fadeout-exp 1s ease-in-out forwards;
+}
+
+@keyframes fadein {
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeout-exp {
+    100%{
+        transform: translateX(-80%);
+    }
+}
+
+@keyframes fadeout-stu {
+    100%{
+        transform: translateX(80%);
+    }
+}
